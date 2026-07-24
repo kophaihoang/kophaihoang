@@ -38,81 +38,34 @@
     text-align: center;
   }
 }
-/* phone */
-@media (max-width: 640px) {
-  .section__title {
-    text-align: center;
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-  img {
-    display: none;
-  }
-  :root {
-    font-size: 13px;
-    line-height: 14px;
-  }
-  .container {
-    max-width: 475px;
-    padding: 0 1rem;
-  }
-  /* header */
-  header {
-    margin-top: 20px;
-  }
-  .header__badge__container {
-    flex-direction: column;
-  }
-  .me__container {
-    padding: 1rem;
-    width: 90%;
-    border-radius: 2rem;
-  }
-  .me__content__container {
-    border-radius: 2rem;
-  }
-  p {
-    line-height: 1.8;
-  }
-}
-/* ==================== SOFT SKILLS - TABLET ==================== */
 
+/* ==================== SOFT SKILLS SECTION ==================== */
+
+/* Tablet - Soft Skills */
 @media (max-width: 768px) {
+  .soft-skills__section {
+    padding: 80px 0;
+    margin-top: 80px;
+  }
+
   .soft-skills__content {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: flex-start;
   }
 
   .soft-skills__tags {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .soft-skills__image {
-    max-width: 100%;
-  }
-
-  .soft-skills__title {
-    font-size: 24px;
-  }
-
-  .soft-skills__section {
-    padding: 100px 0;
-    margin-top: 100px;
-  }
-}
-
-/* ==================== SOFT SKILLS - MOBILE ==================== */
-
-@media (max-width: 480px) {
-  .soft-skills__header {
-    margin-bottom: 15px;
-  }
-
-  .soft-skills__icon {
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    margin-right: 12px;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 250px !important;
+    display: block !important;
+    object-fit: cover;
+    border-radius: 12px;
   }
 
   .soft-skills__title {
@@ -120,36 +73,81 @@
   }
 
   .soft-skills__description {
-    font-size: 13px;
-    margin-bottom: 25px;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 20px;
   }
 
   .soft-skills__tag {
-    padding: 12px 15px;
-  }
-
-  .soft-skills__tag-icon {
-    width: 28px;
-    height: 28px;
-    margin-right: 10px;
+    padding: 10px 12px;
   }
 
   .soft-skills__tag span {
-    font-size: 12px;
-  }
-
-  .soft-skills__section {
-    padding: 80px 0;
-    margin-top: 80px;
+    font-size: 11px;
   }
 }
 
-/* ==================== HARD SKILLS - TABLET ==================== */
+/* Mobile - Soft Skills */
+@media (max-width: 480px) {
+  .soft-skills__section {
+    padding: 60px 0;
+    margin-top: 60px;
+  }
 
-@media (max-width: 768px) {
-  .hard-skills__content {
+  .soft-skills__content {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px;
+  }
+
+  .soft-skills__header {
+    margin-bottom: 15px;
+  }
+
+  .soft-skills__title {
+    font-size: 18px;
+  }
+
+  .soft-skills__description {
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .soft-skills__tags {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .soft-skills__tag {
+    padding: 10px 12px;
+  }
+
+  .soft-skills__tag span {
+    font-size: 11px;
+  }
+
+  .soft-skills__image {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 250px !important;
+    display: block !important;
+    object-fit: cover;
+  }
+}
+
+/* ==================== HARD SKILLS SECTION ==================== */
+
+/* Tablet - Hard Skills */
+@media (max-width: 768px) {
+  .hard-skills__section {
+    padding: 80px 0;
+    margin-top: 80px;
+  }
+
+  .hard-skills__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: flex-start;
   }
 
   .hard-skills__left {
@@ -158,34 +156,31 @@
 
   .hard-skills__tags {
     grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .hard-skills__image-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 250px !important;
+    display: block !important;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .hard-skills__image-wrapper img {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .hard-skills__image {
-    max-width: 100%;
-  }
-
-  .hard-skills__title {
-    font-size: 24px;
-  }
-
-  .hard-skills__section {
-    padding: 100px 0;
-    margin-top: 100px;
-  }
-}
-
-/* ==================== HARD SKILLS - MOBILE ==================== */
-
-@media (max-width: 480px) {
-  .hard-skills__header {
-    margin-bottom: 15px;
-  }
-
-  .hard-skills__icon {
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    margin-right: 12px;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 250px !important;
+    display: block !important;
+    object-fit: cover;
   }
 
   .hard-skills__title {
@@ -193,26 +188,296 @@
   }
 
   .hard-skills__description {
-    font-size: 13px;
-    margin-bottom: 25px;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 20px;
   }
 
   .hard-skills__tag {
-    padding: 12px 15px;
-  }
-
-  .hard-skills__tag-icon {
-    width: 28px;
-    height: 28px;
-    margin-right: 10px;
+    padding: 10px 12px;
   }
 
   .hard-skills__tag span {
-    font-size: 12px;
+    font-size: 11px;
+  }
+}
+
+/* Mobile - Hard Skills */
+@media (max-width: 480px) {
+  .hard-skills__section {
+    padding: 60px 0;
+    margin-top: 60px;
   }
 
-  .hard-skills__section {
+  .hard-skills__content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .hard-skills__header {
+    margin-bottom: 15px;
+  }
+
+  .hard-skills__title {
+    font-size: 18px;
+  }
+
+  .hard-skills__description {
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .hard-skills__tags {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .hard-skills__tag {
+    padding: 10px 12px;
+  }
+
+  .hard-skills__tag span {
+    font-size: 11px;
+  }
+
+  .hard-skills__image-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 250px !important;
+    display: block !important;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .hard-skills__image-wrapper img {
+    width: 100%;
+    height: 100%;
+    display: block !important;
+    object-fit: cover;
+  }
+
+  .hard-skills__image {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 250px !important;
+    display: block !important;
+    object-fit: cover;
+  }
+}
+
+/* ==================== SKILLS/PROJECTS SECTION ==================== */
+
+/* Tablet - Projects/Skills */
+@media (max-width: 768px) {
+  .skills__section {
     padding: 80px 0;
     margin-top: 80px;
+  }
+
+  .skills__container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .skills__content__container {
+    margin-bottom: 40px;
+  }
+
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .skill__card {
+    padding: 25px 20px;
+  }
+
+  .skill__image {
+    height: 180px;
+    margin-bottom: 15px;
+    display: block !important;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .skill__icon {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .skill__title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .skill__list li {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+}
+
+/* Mobile - Projects/Skills */
+@media (max-width: 480px) {
+  .skills__section {
+    padding: 60px 0;
+    margin-top: 60px;
+  }
+
+  .section__title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .skills__container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .skills__content__container {
+    margin-bottom: 30px;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .skill__card {
+    padding: 20px 15px;
+    border-radius: 8px;
+  }
+
+  .skill__image {
+    height: 150px !important;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    display: block !important;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .skill__icon {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .skill__title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .skill__list li {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+
+/* ==================== ABOUT ME SECTION - RESPONSIVE ==================== */
+
+/* Tablet - About Me */
+@media (max-width: 768px) {
+  .me__section {
+    margin: 80px auto;
+  }
+
+  .me__section img {
+    display: none !important;
+  }
+
+  .me__container {
+    width: 85%;
+    padding: 2rem;
+  }
+
+  .me__content__container {
+    padding: 2rem 1.5rem;
+    gap: 20px;
+    border-radius: 2rem;
+  }
+
+  .section__title {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .section__description {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
+
+/* Mobile - About Me */
+@media (max-width: 480px) {
+  .me__section {
+    margin: 60px auto;
+  }
+
+  .me__section img {
+    display: none !important;
+  }
+
+  :root {
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  header {
+    margin-top: 20px;
+  }
+
+  .header__badge__container {
+    flex-direction: column;
+  }
+
+  .me__container {
+    width: 90%;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+
+  .me__content__container {
+    border-radius: 2rem;
+    padding: 1.5rem 1rem;
+    gap: 15px;
+  }
+
+  .section__title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .section__description {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+  .section__action {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .section__action a {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 12px;
+  }
+
+  p {
+    line-height: 1.6;
   }
 }

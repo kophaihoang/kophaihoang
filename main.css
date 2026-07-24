@@ -39,6 +39,9 @@ html {
   max-width: 65ch;
   color: var(--n-500);
 }
+.header__img {
+  background-image: url("../assets/cv2.jpg");
+}
 /* ==================== SKILLS SECTION ==================== */
 
 .skills__section {
