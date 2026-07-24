@@ -75,3 +75,144 @@
     line-height: 1.8;
   }
 }
+/* ==================== SOFT SKILLS - TABLET ==================== */
+
+@media (max-width: 768px) {
+  .soft-skills__content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .soft-skills__tags {
+    grid-template-columns: 1fr;
+  }
+
+  .soft-skills__image {
+    max-width: 100%;
+  }
+
+  .soft-skills__title {
+    font-size: 24px;
+  }
+
+  .soft-skills__section {
+    padding: 100px 0;
+    margin-top: 100px;
+  }
+}
+
+/* ==================== SOFT SKILLS - MOBILE ==================== */
+
+@media (max-width: 480px) {
+  .soft-skills__header {
+    margin-bottom: 15px;
+  }
+
+  .soft-skills__icon {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    margin-right: 12px;
+  }
+
+  .soft-skills__title {
+    font-size: 20px;
+  }
+
+  .soft-skills__description {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  .soft-skills__tag {
+    padding: 12px 15px;
+  }
+
+  .soft-skills__tag-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+  }
+
+  .soft-skills__tag span {
+    font-size: 12px;
+  }
+
+  .soft-skills__section {
+    padding: 80px 0;
+    margin-top: 80px;
+  }
+}
+
+/* ==================== HARD SKILLS - TABLET ==================== */
+
+@media (max-width: 768px) {
+  .hard-skills__content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hard-skills__left {
+    order: 0;
+  }
+
+  .hard-skills__tags {
+    grid-template-columns: 1fr;
+  }
+
+  .hard-skills__image {
+    max-width: 100%;
+  }
+
+  .hard-skills__title {
+    font-size: 24px;
+  }
+
+  .hard-skills__section {
+    padding: 100px 0;
+    margin-top: 100px;
+  }
+}
+
+/* ==================== HARD SKILLS - MOBILE ==================== */
+
+@media (max-width: 480px) {
+  .hard-skills__header {
+    margin-bottom: 15px;
+  }
+
+  .hard-skills__icon {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    margin-right: 12px;
+  }
+
+  .hard-skills__title {
+    font-size: 20px;
+  }
+
+  .hard-skills__description {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  .hard-skills__tag {
+    padding: 12px 15px;
+  }
+
+  .hard-skills__tag-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+  }
+
+  .hard-skills__tag span {
+    font-size: 12px;
+  }
+
+  .hard-skills__section {
+    padding: 80px 0;
+    margin-top: 80px;
+  }
+}

@@ -11,6 +11,9 @@ a {
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   font-size: var(--p-font-size);
   line-height: var(--p-line-height);
@@ -35,4 +38,360 @@ a {
   text-align: center;
   max-width: 65ch;
   color: var(--n-500);
+}
+/* ==================== SKILLS SECTION ==================== */
+
+.skills__section {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(0, 0, 0, 0.03) 10px,
+      rgba(0, 0, 0, 0.03) 20px
+    );
+  padding: 120px 0;
+  margin-top: 120px;
+}
+
+.skills__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.skills__content__container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.skill__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  padding: 35px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.skill__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.skill__image {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill__icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.skill__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  font-family: "Space Mono", monospace;
+}
+
+.skill__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill__list li {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.skill__list li:last-child {
+  margin-bottom: 0;
+}
+/* ==================== SOFT SKILLS SECTION ==================== */
+
+.soft-skills__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.soft-skills__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.soft-skills__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.soft-skills__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.soft-skills__icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.soft-skills__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  font-family: "Space Mono", monospace;
+}
+
+.soft-skills__description {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.soft-skills__tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.soft-skills__tag {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.soft-skills__tag:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.soft-skills__tag-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.soft-skills__tag span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-family: "Space Mono", monospace;
+}
+
+.soft-skills__right {
+  display: flex;
+  justify-content: center;
+}
+
+.soft-skills__image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+}
+
+/* ==================== HARD SKILLS SECTION ==================== */
+
+.soft-skills__image,
+.hard-skills__image {
+  width: 100%;
+  max-width: 450px; /* cùng chiều rộng */
+  height: 380px; /* cùng chiều cao */
+
+  object-fit: cover;
+
+  border-radius: 18px;
+  display: block;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+  transition: all 0.35s ease;
+}
+.hard-skills__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hard-skills__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hard-skills__left {
+  display: flex;
+  justify-content: center;
+  order: -1;
+}
+
+.hard-skills__right {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.hard-skills__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hard-skills__icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #f5a623 0%, #d68910 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.hard-skills__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  font-family: "Space Mono", monospace;
+}
+
+.hard-skills__description {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.hard-skills__tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.hard-skills__tag {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.hard-skills__tag:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.hard-skills__tag-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.hard-skills__tag span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-family: "Space Mono", monospace;
+}
+.soft-skills__right,
+.hard-skills__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ================= HARD IMAGE HOVER ================= */
+
+.hard-skills__image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hard-skills__image-wrapper img {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+}
+
+.hard-skills__image-default {
+  opacity: 1;
+}
+
+.hard-skills__image-hover {
+  opacity: 0;
+}
+
+.hard-skills__image-wrapper:hover .hard-skills__image-default {
+  opacity: 0;
+  transform: scale(1.05);
+}
+
+.hard-skills__image-wrapper:hover .hard-skills__image-hover {
+  opacity: 1;
+  transform: scale(1.05);
 }
