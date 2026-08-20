@@ -18,7 +18,7 @@ html {
   font-size: var(--p-font-size);
   line-height: var(--p-line-height);
   letter-spacing: var(--p-letter-spacing);
-  font-family: "Space Mono", monospace;
+  font-family: "Google Sans", monospace;
   font-weight: 700;
   font-style: normal;
 }
