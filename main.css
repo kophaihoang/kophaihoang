@@ -5,43 +5,54 @@
 @import "./sections/header.css";
 @import "./sections/projects.css";
 @import "./sections/skills.css";
+
+/* Ép tất cả các phần tử dùng chung 1 font chuẩn */
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
 a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
 html {
   scroll-behavior: smooth;
 }
+
 :root {
   font-size: var(--p-font-size);
   line-height: var(--p-line-height);
   letter-spacing: var(--p-letter-spacing);
-font-family: 'Plus Jakarta Sans', sans-serif;  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400; /* Đưa về nét chữ thường mặc định */
   font-style: normal;
 }
+
 .container {
   margin: 0 auto;
   max-width: 1536px;
   padding: 0 2rem;
 }
+
 .section__title {
   font-size: var(--h1-font-size);
   line-height: var(--h1-line-height);
-  font-weight: bold;
+  font-weight: 700;
   color: var(--p-950);
   text-transform: capitalize;
 }
+
 .section__description {
   text-align: center;
   max-width: 65ch;
   color: var(--n-500);
 }
+
 .header__img {
   background-image: url("assets/cv2.jpg");
 }
+
 /* ==================== SKILLS SECTION ==================== */
 
 .skills__section {
@@ -109,12 +120,12 @@ font-family: 'Plus Jakarta Sans', sans-serif;  font-weight: 700;
   object-fit: cover;
   display: block;
 }
+
 .skill__title {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 15px;
   color: #1a1a1a;
-  font-family: "Space Mono", monospace;
 }
 
 .skill__list {
@@ -133,6 +144,7 @@ font-family: 'Plus Jakarta Sans', sans-serif;  font-weight: 700;
 .skill__list li:last-child {
   margin-bottom: 0;
 }
+
 /* ==================== SOFT SKILLS SECTION ==================== */
 
 .soft-skills__container {
@@ -178,7 +190,6 @@ font-family: 'Plus Jakarta Sans', sans-serif;  font-weight: 700;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0;
-  font-family: "Space Mono", monospace;
 }
 
 .soft-skills__description {
@@ -221,7 +232,6 @@ font-family: 'Plus Jakarta Sans', sans-serif;  font-weight: 700;
   font-size: 13px;
   font-weight: 600;
   color: #1a1a1a;
-  font-family: "Space Mono", monospace;
 }
 
 .soft-skills__right {
@@ -242,18 +252,15 @@ font-family: 'Plus Jakarta Sans', sans-serif;  font-weight: 700;
 .soft-skills__image,
 .hard-skills__image {
   width: 100%;
-  max-width: 450px; /* cùng chiều rộng */
-  height: 380px; /* cùng chiều cao */
-
+  max-width: 450px;
+  height: 380px;
   object-fit: cover;
-
   border-radius: 18px;
   display: block;
-
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-
   transition: all 0.35s ease;
 }
+
 .hard-skills__container {
   max-width: 1200px;
   margin: 0 auto;
@@ -304,7 +311,6 @@ font-family: 'Plus Jakarta Sans', sans-serif;  font-weight: 700;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0;
-  font-family: "Space Mono", monospace;
 }
 
 .hard-skills__description {
@@ -347,14 +353,15 @@ font-family: 'Plus Jakarta Sans', sans-serif;  font-weight: 700;
   font-size: 13px;
   font-weight: 600;
   color: #1a1a1a;
-  font-family: "Space Mono", monospace;
 }
+
 .soft-skills__right,
 .hard-skills__left {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 /* ================= HARD IMAGE HOVER ================= */
 
 .hard-skills__image-wrapper {
@@ -370,15 +377,10 @@ font-family: 'Plus Jakarta Sans', sans-serif;  font-weight: 700;
 .hard-skills__image-wrapper img {
   position: absolute;
   inset: 0;
-
   width: 100%;
   height: 100%;
-
   object-fit: cover;
-
-  transition:
-    opacity 0.45s ease,
-    transform 0.45s ease;
+  transition: opacity 0.45s ease, transform 0.45s ease;
 }
 
 .hard-skills__image-default {
